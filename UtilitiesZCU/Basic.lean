@@ -135,8 +135,7 @@ lemma Real.HolderConjugate.integrable_memLp_mul_memLp
     {g : Ω → ℝ} (hgq : MemLp g ↱q μ)
     {l : Ω → ℝ} (hlp : MemLp l ↱p μ) :
     Integrable (fun ω : Ω => g ω * l ω) μ := by
-  convert hgq.integrable_mul hlp
-  · rfl
+  convert! hgq.integrable_mul hlp
   exact hpq.symm.ennrealOfReal
 
 lemma Real.HolderConjugate.integrable_memLp_inner_memLp
