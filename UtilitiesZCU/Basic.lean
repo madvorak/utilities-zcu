@@ -152,4 +152,3 @@ lemma Real.HolderConjugate.integrable_memLp_inner_memLp
   exact abs_real_inner_le_norm (g ω) (l ω)
 
 noncomputable def normSMulSelf {T : Type*} {n : ℕ} (_ : T) (ξ : ℝ^n) : ℝ^n := ‖ξ‖ • ξ
-#eval 2
